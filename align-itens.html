@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align items</title>
+    <style>
+        .container {
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+        }
+        
+        .item {
+            background-color: blueviolet;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1;
+        }
+        
+        .flex {
+            flex: 1;
+        }
+        
+        .center {
+            align-items: center;
+        }
+        
+        .stretch {
+            align-items: stretch;
+        }
+        
+        .start {
+            align-items: flex-start;
+        }
+        
+        .end {
+            align-items: flex-end;
+        }
+        
+        .baseline {
+            align-items: baseline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>ROW</h1>
+    <p> Center</p>
+    <section class="container center">
+        <!--faz com conforme eu vou aumentando o tamanho do meu item os demais vão respeitando o tamanho acordado-->
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">item 3 mais algunm texto</div>
+    </section>
+
+    <p> Stretch</p>
+    <!--Faz com que conforme eu vou aumentando o tamanho do meu item os demais itens também vão aumentando-->
+    <section class="container stretch">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de
+            tipos. Lorem Ipsum sobreviveu não só a cinco século</div>
+    </section>
+
+    <p>flex-start</p>
+    <!--Faz com que os itens fique na parte de cima-->
+    <section class="container start">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de
+            tipos. Lorem Ipsum sobreviveu não só a cinco século</div>
+    </section>
+
+    <p>flex-end</p>
+    <!--Faz com os itens fique para baixo-->
+    <section class="container end">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de
+            tipos. Lorem Ipsum sobreviveu não só a cinco século</div>
+    </section>
+    <p>Baseline</p>
+    <!--Faz com os itens fique para baixo-->
+    <section class="container baseline">
+        <div class="item"><br>Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de
+            tipos. Lorem Ipsum sobreviveu não só a cinco século</div>
+    </section>
+</body>
+
+</html>
